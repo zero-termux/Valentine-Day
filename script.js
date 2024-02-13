@@ -1,7 +1,10 @@
 document.addEventListener('DOMContentLoaded', (e) => {
   e.preventDefault();
   const audio = document.getElementById('backgroundAudio');
-  audio.play();
+  setTimeout(function() {
+    audio.muted = false;
+    audio.play();
+  }, 1000);
   const btnYes = document.getElementById('yes');
   const btnNo = document.getElementById('no');
   const wrapper = document.querySelector('.card');

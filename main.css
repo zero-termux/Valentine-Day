@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Overpass:wght@300&family=Philosopher&display=swap');
+
+body {
+  background-color: #ff0c99;
+  overflow-x: hidden!important;
+}
+
+.container {
+  position: relative!important;
+  width: 350px;
+  height: 450px;
+}
+
+.card {
+  height: 350px!important;
+  width: 95%!important;
+  position: relative!important;
+  display: none;
+}
+
+.card h5 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8rem!important;
+  color: #ff0c99;
+}
+
+.card p {
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.1rem;
+}
+
+.card button {
+  position: relative!important;
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  font-family: 'Overpass', sans-serif;
+  font-size: 1rem;
+  border: none;
+}
+
+#yes {
+  color: white;
+  background-color: #ff0c99;
+  transition: .3s ease-in-out;
+}
+
+#yes:hover {
+  background-color: #ff2ba6;
+}
+
+.col-md {
+  position: relative!important;
+}
+
+#no {
+  color: #ff0c99;
+  background-color: white;
+  transition: .3s ease-in-out;
+  border: 1px solid #ff0c99;
+}
+
+#no:hover {
+  background-color: #ffd6ee;
+}
+
+.emoji-rain-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    .emoji {
+      position: absolute;
+      font-size: 20px;
+      animation: emojiFall linear 2s forwards;
+    }
+
+    @keyframes emojiFall {
+      to {
+        transform: translateY(100vh);
+      }
+    }
+    
+#prm {
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  font-size: 2.8rem;
+  padding: 5px;
+}
+
+#ktr {
+  color: white;
+  font-family: 'Overpass', sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  display: none;
+}
+
+#ftr {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  display: none;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.cursor {
+  border-right: 2px solid white;
+}
+
+@keyframes blur {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  
+  50% {
+    opacity: .5;
+    transform: scale(1.1);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animasi1 {
+  animation: blur 3s ease;
+}
+
+.feed a {
+  position: relative!important;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  transition: .3s;
+}
+
+.feed a:hover {
+  opacity: 0.5;
+}
+
+#awl {
+  position: relative!important;
+  width: 250px;
+  height: 55px;
+  border-radius: 10px;
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #ff0c99;
+  transition: .3s ease-in-out;
+  border: 2px solid white;
+}
+
+#awl:hover {
+  background-color: white;
+  color: #ff0c99;
+}
